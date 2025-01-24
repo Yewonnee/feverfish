@@ -1,0 +1,47 @@
+body {
+    font-family: 'Diphylleia', sans-serif;
+    font-size: 16px;
+    color: #f2e0b3;
+    text-align: center;
+
+    background-image: url('background.png'); /* 배경 이미지 경로 */
+    background-attachment: fixed; /* 스크롤 시 배경 고정 */
+    background-size: cover; /* 화면에 맞게 꽉 채우기 */
+    background-position: center; /* 배경 이미지를 가운데 정렬 */
+    background-repeat: no-repeat; /* 배경 이미지 반복하지 않기 */
+}
+
+h1 {
+    font-family: 'Diphylleia', sans-serif; /* 원하는 폰트 */
+    font-size: 48px; /* 글자 크기 */
+    color: #ffffff; /* 텍스트 색상 */
+    text-align: center;
+
+    /* 외곽선 효과 (0.5px) */
+    text-shadow: 
+        -0.5px -0.5px 0 #000, /* 왼쪽 위 */
+         0.5px -0.5px 0 #000, /* 오른쪽 위 */
+        -0.5px  0.5px 0 #000, /* 왼쪽 아래 */
+         0.5px  0.5px 0 #000; /* 오른쪽 아래 */
+
+    /* 자간 조정 */
+    letter-spacing: 3px; /* 원하는 값으로 조정 (2px은 예시) */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+p {
+    font-family: 'Diphylleia', sans-serif;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* 이미지에 마우스를 올리면 커지는 효과 */
+img {
+    transition: transform 0.3s ease; /* 부드럽게 커지는 애니메이션 */
+}
+
+img:hover {
+    transform: scale(1.03); /* 3% 확대 */
+}
